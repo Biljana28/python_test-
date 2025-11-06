@@ -15,6 +15,7 @@ class TestUrbanRoutes:
        pass
 
   def test_order_2_ice_creams
-      # Add in S8
-      print("functioncreated for set route")
-      pass
+      for i in range(2):
+          # Add in S8
+          print("functioncreated for set route")
+          pass
