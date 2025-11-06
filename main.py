@@ -1,9 +1,20 @@
-def in_autotests_we_trust(a, b):
-    if a == b:
-        print('PASS')
-    else:
-        print('FAIL')
+import data
+import helpers
 
-in_autotests_we_trust(10, '10')
+class TestUrbanRoutes:
+  @classmethod
+  def setup_class(cls):
+      if helpers.is_url_reachable(data.URBAN_ROUTES_URL):
+          print ("Connected to the Urban Routes server")
+      else:
+          print ("Cannot connect to Urban Routes. Check the server is on and still running")
 
-in_autotests_we_trust(0, False)
+  def  test_set_route(self):
+       # Add in S8
+       print("functioncreated for set route")
+       pass
+
+  def test_order_2_ice_creams
+      # Add in S8
+      print("functioncreated for set route")
+      pass
